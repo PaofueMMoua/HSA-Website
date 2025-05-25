@@ -24,3 +24,23 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
 }
+
+function menu() {
+  let x = document.getElementsByClassName("drop_content");
+  if (x.display = "block") {
+    x.display = "none";
+  } else {
+    x.display = "block";
+  } 
+}
+
+let menu_btn = document.getElementById("menu-btn");
+
+menu_btn.addEventListener('click', () => {
+  let x = document.getElementsByClassName("drop_content");
+  if (x.display = "block") {
+    x.display = "none";
+  } else {
+    x.display = "block";
+  } 
+})

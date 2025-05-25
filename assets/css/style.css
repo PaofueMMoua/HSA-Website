@@ -25,7 +25,9 @@ nav {
     justify-content: space-evenly; 
     align-items: center; 
     background: #758CB5; 
+    flex-direction: row;
     padding: 20px; 
+    width:100vw;
 }
     
 nav ul { 
@@ -306,7 +308,6 @@ footer a {
 /* dropdown for nav menu */
 .dropdown {
   float:left;
-  overflow:auto;
   display: none;
 }
 
@@ -348,7 +349,7 @@ footer a {
     nav ul{
         display:none;
     }
-    .dropdown, .drp_btn, .drop_content {
+    .dropdown, .drp_btn {
         display:block;
     }
     .nav-button {
@@ -356,5 +357,23 @@ footer a {
     }
     nav div {
         left:0;
+        position:relative;
     }
+    nav {
+        justify-content: end;;
+    }
+    .dropdown button {
+        background: #ffffff; 
+    color: #000000; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    position:absolute;
+    right:-4vw;
+    top:1vw;
+    }
+    
+
 }
