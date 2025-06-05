@@ -44,3 +44,10 @@ menu_btn.addEventListener('click', () => {
     x.display = "block";
   } 
 })
+
+let meeting_Social = document.getElementById('weeklyMeetingAndMonthlySocialButton');
+
+metting_social.addEventListener('click', () => {
+  let x = document.getElementById('Meeting&SocialText');
+  if (x.display = )
+})
