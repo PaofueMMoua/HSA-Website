@@ -335,6 +335,14 @@ footer a {
 
 }
 
+.half-photo {
+        width: 80%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+}
+
 /* more mobile functions and features */
 
 @media screen and (max-width: 1080px) {
