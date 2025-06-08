@@ -26,28 +26,22 @@ function showSlides(n) {
 }
 
 function menu() {
-  let x = document.getElementsByClassName("drop_content");
-  if (x.display = "block") {
+  let x = document.getElementById("dropContent");
+  if (x.style.display = 'flex') {
     x.display = "none";
   } else {
-    x.display = "block";
+    x.display = "flex";
   } 
 }
 
-let menu_btn = document.getElementById("menu-btn");
+let dropContent = document.getElementById('dropContent')
+function show() {
+  dropContent.classList.toggle("show")
+}
 
-menu_btn.addEventListener('click', () => {
-  let x = document.getElementsByClassName("drop_content");
-  if (x.display = "block") {
-    x.display = "none";
-  } else {
-    x.display = "block";
-  } 
-})
+// let meeting_Social = document.getElementById('weeklyMeetingAndMonthlySocialButton');
 
-let meeting_Social = document.getElementById('weeklyMeetingAndMonthlySocialButton');
-
-metting_social.addEventListener('click', () => {
-  let x = document.getElementById('Meeting&SocialText');
-  if (x.display = )
-})
+// metting_social.addEventListener('click', () => {
+//   let x = document.getElementById('Meeting&SocialText');
+//   if (x.display = )
+// })
