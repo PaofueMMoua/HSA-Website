@@ -39,6 +39,8 @@ function show() {
   dropContent.classList.toggle("show")
 }
 
+document.getElementById('sidehide').click();
+
 // let meeting_Social = document.getElementById('weeklyMeetingAndMonthlySocialButton');
 
 // metting_social.addEventListener('click', () => {

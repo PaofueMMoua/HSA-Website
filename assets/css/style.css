@@ -451,6 +451,12 @@ footer a {
   border-color: #7caee1;
 }
 
+.familiesList iframe {
+  width:80vw;
+  height:75vh;
+  align-self:center;
+}
+
 
 /* more mobile functions and features */
 
