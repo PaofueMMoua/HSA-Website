@@ -39,7 +39,13 @@ function show() {
   dropContent.classList.toggle("show")
 }
 
-document.getElementById('sidehide').click();
+// let famline = document.getElementById
+function famDrop() {
+  let famline = document.getElementById('familything')
+  let temp = famline.classList
+  temp.toggle('show')
+}
+
 
 // let meeting_Social = document.getElementById('weeklyMeetingAndMonthlySocialButton');
 

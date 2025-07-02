@@ -42,10 +42,23 @@
         </div>
     </div>
   </section>
-  <section class="events">
+  <section class="faq">
+    <h2 class="section-title">Active Lines</h2>
     <div class="familiesList column">
-      <h1 class="familyNames">PhoHolics</h1>
-      <iframe src="./PhoHolics-2-Jul-2025-010538113.html" frameborder="0" width="80vw" height="75vh"></iframe>
+      <div class="faq-question"><h1>PhoHolics v</h1></div>
+      <div class="faq-answer familiesList"><iframe src="./PhoHolics-2-Jul-2025-010538113.html" frameborder="0" ></iframe></div>
+      <div class="faq-question"><h1>Meraki Legion v</h1></div>
+      <div class="faq-answer familiesList"><iframe src="./Meraki-Legion-2-Jul-2025-143221513.html" frameborder="0" ></iframe></div>
+      <div class="faq-question"><h1>Ohana v</h1></div>
+      <div class="faq-answer familiesList"><iframe src="./Ohana-2-Jul-2025-143214185.html" frameborder="0" ></iframe></div>
+      <div class="faq-question"><h1>Nehemiah Yang's Family v</h1></div>
+      <div class="faq-answer familiesList"><iframe src="./Nehemiah-Yangs-Family-2-Jul-2025-143207264.html" frameborder="0" ></iframe></div>
+    </div>
+  </section>
+  <!-- <section class="events">
+    <div class="familiesList column">
+      <div onclick="famDrop()"><h1 class="familyNames"onclick="famDrop()">PhoHolics</h1></div>
+      <iframe src="./PhoHolics-2-Jul-2025-010538113.html" frameborder="0" width="80vw" height="75vh" id="familything"></iframe>
       <a href=""><h1 class="familyNames">Meraki Legion</h1></a>
       <a href=""><h1 class="familyNames">Ohana</h1></a>
       <a href=""><h1 class="familyNames">Nehemiah Yang's Family</h1></a>
@@ -64,7 +77,15 @@
       <a href=""><h1 class="familyNames">Family</h1></a>
       <a href=""><h1 class="familyNames">Family</h1></a>
     </div>
-  </section>
+  </section> -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>

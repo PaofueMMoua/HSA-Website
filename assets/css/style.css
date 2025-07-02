@@ -455,6 +455,11 @@ footer a {
   width:80vw;
   height:75vh;
   align-self:center;
+  border-radius: 3vw;
+}
+
+.familiesList div h1 {
+  color:#333
 }
 
 
