@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vertical Family Tree</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 40px;
+    }
+
+    .tree {
+      display: flex;
+      justify-content: center;
+    }
+
+    .tree ul {
+      padding-top: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tree ul::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border-left: 2px solid #ccc;
+      height: 20px;
+    }
+
+    .tree li {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 20px 5px 0 5px;
+      text-align: center;
+      position: relative;
+    }
+
+    .tree li::before, .tree li::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      border-top: 2px solid #ccc;
+      width: 50%;
+      height: 20px;
+    }
+
+    .tree li::before {
+      left: -50%;
+      border-right: 2px solid #ccc;
+    }
+
+    .tree li::after {
+      right: -50%;
+      border-left: 2px solid #ccc;
+    }
+
+    .tree li:only-child::before,
+    .tree li:only-child::after {
+      display: none;
+    }
+
+    .tree li:only-child {
+      padding-top: 0;
+    }
+
+    .tree li:first-child::before,
+    .tree li:last-child::after {
+      border: 0 none;
+    }
+
+    .tree li:last-child::before {
+      border-radius: 0 5px 0 0;
+    }
+
+    .tree li:first-child::after {
+      border-radius: 5px 0 0 0;
+    }
+
+    .node {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Coloring */
+    .pink {
+      background-color: #f9d5e5;
+      border-color: #e17ca1;
+    }
+
+    .blue {
+      background-color: #d5e9f9;
+      border-color: #7caee1;
+    }
+
+    .tree ul ul {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .tree ul ul::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 20px;
+      border-top: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tree">
+  <ul>
+    <li>
+      <div class="node pink">Liaku Xiong</div>
+      <ul>
+        <li>
+          <div class="node pink">Gao Lee</div>
+          <ul>
+            <li>
+              <div class="node blue">Charles Thao</div>
+              <ul>
+                <li>
+                  <div class="node blue">Leo Vang</div>
+                  <ul>
+                    <li>
+                      <div class="node blue">Pengcheng Xiong</div>
+                      <ul>
+                        <li>
+                          <div class="node pink">MaiYer Thao</div>
+                          <ul>
+                            <li><div class="node blue">Indar Freitus</div></li>
+                            <li>
+                              <div class="node pink">Sunita Thao</div>
+                              <ul>
+                                <li>
+                                  <div class="node pink">Tina Moua</div>
+                                  <ul>
+                                    <li><div class="node pink">Kayla Xiong</div></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><div class="node pink">Stefanie Cardozo</div></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="node blue">Raiden Lieng</div>
+                      <ul>
+                        <li><div class="node blue">Jake Lor</div></li>
+                        <li><div class="node pink">Jeanette Moua</div></li>
+                        <li>
+                          <div class="node blue">Thomas Moua</div>
+                          <ul>
+                            <li><div class="node blue">Solomon Yang</div></li>
+                          </ul>
+                        </li>
+                        <li><div class="node blue">Jonathan Rivaz</div></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="node pink">Yer Thao</div>
+                  <ul>
+                    <li><div class="node blue">Drew Vue</div></li>
+                    <li><div class="node pink">Michelle Her</div></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
