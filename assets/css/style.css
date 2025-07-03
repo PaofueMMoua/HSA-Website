@@ -359,6 +359,10 @@ footer a {
     display:block;
 }
 
+.showFlex{
+    display:flex;
+}
+
 .dropDownSection {
     display:flex;
     justify-content: center;
@@ -460,6 +464,19 @@ footer a {
 
 .familiesList div h1 {
   color:#333
+}
+
+footer div div ul li a {
+  text-decoration: none;
+  font-style:none;
+}
+footer div div ul {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height:100%;
+  width:100%;
 }
 
 
