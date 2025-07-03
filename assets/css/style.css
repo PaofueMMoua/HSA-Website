@@ -478,6 +478,10 @@ footer div div ul {
   height:100%;
   width:100%;
 }
+.officers h1, .officers p {
+  color:#333;
+
+}
 
 
 /* more mobile functions and features */
