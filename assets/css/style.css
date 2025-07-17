@@ -406,7 +406,12 @@ footer div div ul {
 }
 .officers h1, .officers p {
   color:#333;
-
+}
+.officers div {
+    width:80%;
+    align-self:center;
+    align-content: center;
+    justify-content: center;
 }
 
 
