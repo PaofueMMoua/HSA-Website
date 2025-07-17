@@ -414,6 +414,42 @@ footer div div ul {
     justify-content: center;
 }
 
+/* mobile for main parts */
+@media screen and (max-width: 830px) {
+
+    footer .grid {
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 20px; 
+        margin-top: 20px; 
+    }
+
+    .grid {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    .events, .benefits {
+        flex-direction: column;
+    }
+    .officers .row{
+        flex-direction: column;
+    }
+    .officers div .half {
+        align-items: center;
+        width:100%;
+        justify-content:space-evenly;
+    }
+    .calender iframe, .fp-page{
+        width:90%;
+        height:90vw;
+    }
+    blockquote {
+        width:90%;
+    }
+
+}
 
 /* more mobile functions and features */
 
@@ -421,6 +457,12 @@ footer div div ul {
     
     nav {
         padding: 2vw 7vw 2vw 2vw;
+    }
+    .social-grid .grid {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
     }
 }
 /* true mobile for the rest of the way */
@@ -452,5 +494,8 @@ footer div div ul {
     position:absolute;
     right:-4vw;
     top:1vw;
+    }
+    .license {
+        display:none;
     }
 }
