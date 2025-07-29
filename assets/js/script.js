@@ -30,7 +30,6 @@ function menu() {
   x.classList.toggle("showFlex")
 }
 
-
 function show() {
   let dropContent = document.getElementById('dropContent')
   dropContent.classList.toggle("show")
