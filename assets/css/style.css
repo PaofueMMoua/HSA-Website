@@ -430,7 +430,7 @@ footer div div ul {
         align-items:center;
         justify-content: center;
     }
-    .events, .benefits {
+    .events, .benefits, .hero{
         flex-direction: column;
     }
     .officers .row{
@@ -447,6 +447,15 @@ footer div div ul {
     }
     blockquote {
         width:90%;
+    }
+    .head-img {
+        width:50%;
+        height:50%;
+    }
+    .button-rows {
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
     }
 
 }
