@@ -29,12 +29,6 @@ nav {
     width:100vw;
 }
 
-.navbar{
-  background:#445675;
-  color:white;
-  padding:12px 40px;
-}
-
 .nav-container{
   display:flex;
   justify-content:space-between;
@@ -69,7 +63,7 @@ nav a{
 }
 
 .navbar{
-background:#111;
+background:#1f2937;
 color:white;
 padding:12px 30px;
 }
@@ -328,7 +322,7 @@ nav{
   top:63px;
   left:0;
   width:100%;
-  background:#111;
+  background:#1f2937;
 
   flex-direction:column;
   align-items:center;
