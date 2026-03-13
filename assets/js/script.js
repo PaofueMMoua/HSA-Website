@@ -40,3 +40,24 @@ function famDrop() {
   let temp = famline.classList
   temp.toggle('show')
 }
+
+function openOfficer(name, role, img, bio){
+
+    const modal = document.getElementById("officerModal")
+
+    document.getElementById("modalName").textContent = name
+    document.getElementById("modalRole").textContent = role
+    document.getElementById("modalImg").src = img
+    document.getElementById("modalBio").textContent = bio
+
+    modal.classList.add("active")
+}
+
+function closeOfficer(){
+    document.getElementById("officerModal").classList.remove("active")
+}
+
+function toggleMenu(){
+const menu = document.getElementById("navMenu")
+menu.classList.toggle("active")
+}

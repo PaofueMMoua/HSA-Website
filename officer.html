@@ -12,39 +12,122 @@
 
 <body>
 
-  <a href="index.html"><img class="logo" src="./Img/HSA LOGO.png" alt="HSA Logo" href="./index.html"></a>
-  
-  <nav>
-    <ul>
-      <li><a href="./index.html">Home Page</a></li>
-      <li><a href="./event.html">Events Calendar</a></li>
-      <li><a href="./about.html">About Us</a></li>
-      <!-- <li><a href="./resources.html">Resources</a></li> -->
-      <li><a href="./contact.html">Contact</a></li>
-      <li><a href="./families.html">Family Lines</a></li>
-    </ul>
-    <div class="dropDownSection">
-      <div class="dropdown">
-        <button class="dropDownBtn" id="menu_btn" onclick="menu()">Menu</button>
-      </div>
-      <div class="drop_content" id="dropContent">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./officer.html">Officers</a>
-        <a href="./event.html">Event</a>
-        <!-- <a href="./resources.html">Resources</a> -->
-        <a href="./contact.html">Contact</a>
-        <a href="./families.html">Family</a>
-      </div>
-    </div>
-  </nav>
-  <a class="nav-button" href="./officer.html">Current Officers</a>
+
+<header class="navbar"> 
+  <div class="nav-container"> 
+    <a href="index.html" class="logo-area"> 
+      <img src="./Img/HSA LOGO.png" alt="HSA Logo"> 
+      <span>UC Merced HSA</span> 
+    </a> 
+    <!-- Hamburger menu --> 
+     <div class="hamburger" onclick="toggleMenu()"> 
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> 
+      <!-- Navigation links --> 
+      <nav id="navMenu"> 
+        <a href="index.html">Home</a> 
+        <a href="event.html">Events</a> 
+        <a href="about.html">About</a> 
+        <a href="officer.html">Officers</a> 
+        <a href="families.html">Families</a> 
+        <a href="contact.html" class="nav-join">Join</a> 
+      </nav> 
+  </div> 
+</header>
 
   <section class="hero column">
     <h1 class="section-title">See our Lovely Officers here at HSA from UC Merced</p>
   </section>
   <!-- President -->
-  <section class="events column officers">
+
+<section class="officers">
+
+<h1 >Meet Our Officers</h1>
+
+<div class="officer-grid">
+
+<div class="officer-card"
+onclick="openOfficer('Louis Vang','President','./Img/louis.webp','Louis leads the Hmong Student Association and helps guide the organization’s vision, events, and community impact at UC Merced.')">
+<img src="./Img/louis.webp">
+<h3>Louis Vang</h3>
+<p>President</p>
+</div>
+
+<div class="officer-card"
+onclick="openOfficer('Nicholas Vang','Vice President','./Img/nicholas.webp','Nicholas supports the president and helps coordinate club operations and major events.')">
+<img src="./Img/nicholas.webp">
+<h3>Nicholas Vang</h3>
+<p>Vice President</p>
+</div>
+
+<div class="officer-card"
+onclick="openOfficer('Natalie Vang','Secretary','./Img/natalie.webp','Natalie manages meeting notes, documentation, and internal communication for the organization.')">
+<img src="./Img/natalie.webp">
+<h3>Natalie Vang</h3>
+<p>Secretary</p>
+</div>
+
+<div class="officer-card"
+onclick="openOfficer('Kenneth Thao','Public Relations','./Img/kenneth.webp','Kenneth handles outreach, social media, and helps connect HSA with the broader community.')">
+<img src="./Img/kenneth.webp">
+<h3>Kenneth Thao</h3>
+<p>Public Relations</p>
+</div>
+
+<div class="officer-card"
+onclick="openOfficer('Aubrey Yang','Activities Director','./Img/aubrey.webp','Aubrey plans club activities and events that bring the HSA community together.')">
+<img src="./Img/aubrey.webp">
+<h3>Aubrey Yang</h3>
+<p>Activities Director</p>
+</div>
+
+<div class="officer-card"
+onclick="openOfficer('Paofue Moua','Historian','./Img/paofue.webp','Paofue documents HSA events and preserves the memories and history of the organization.')">
+<img src="./Img/paofue.webp">
+<h3>Paofue Moua</h3>
+<p>Historian</p>
+</div>
+
+<div class="officer-card"
+onclick="openOfficer('Kate Saechao','Director of Community Engagement','./Img/kate.webp','Kate helps build relationships between HSA and the surrounding community.')">
+<img src="./Img/kate.webp">
+<h3>Kate Saechao</h3>
+<p>DCE</p>
+</div>
+
+<div class="officer-card"
+onclick="openOfficer('Matthew Vang','Director of Community Engagement','./Img/matthew.webp','Matthew works alongside Kate to coordinate outreach and community initiatives.')">
+<img src="./Img/matthew.webp">
+<h3>Matthew Vang</h3>
+<p>DCE</p>
+</div>
+
+</div>
+
+</section>
+
+
+<div id="officerModal" class="officer-modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" onclick="closeOfficer()">×</span>
+
+        <img id="modalImg">
+
+        <h2 id="modalName"></h2>
+
+        <h4 id="modalRole"></h4>
+
+        <p id="modalBio"></p>
+
+    </div>
+
+</div>
+
+  <!-- <section class="events column officers">
     <h1>President - Louis Vang</h1>
     <div class="row">
       <div class="half column">
@@ -62,9 +145,9 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Vice President -->
-  <section class="benefits column officers">
+  <!-- <section class="benefits column officers">
     <h1>Vice President - Nicholas Vang</h1>
     <div class="row">
 
@@ -83,9 +166,9 @@
       </div>
     </div>
 
-  </section>
+  </section> -->
   <!-- Secretary -->
-  <section class=" events  column officers">
+  <!-- <section class=" events  column officers">
     <div class="half column"></div>
     <div class="half column"></div>
     <h1>Secretary - Natalie Vang</h1>
@@ -104,9 +187,9 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Treasurer -->
-  <section class="benefits column officers">
+  <!-- <section class="benefits column officers">
     <h1>Treasurer - Grace Vang</h1>
     <div class="row">
       <div class="half column">
@@ -119,9 +202,9 @@
         <img src="./Img/Officer-Grace (1 of 1).webp" width="80%" alt="">
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Public Relations -->
-  <section class="events column officers">
+  <!-- <section class="events column officers">
     <h1>Public Relations - Kenneth Thao</h1>
     <br>
     <div class="row">
@@ -136,9 +219,9 @@
           relationships.</p>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Activities Director -->
-  <section class="benefits column officers">
+  <!-- <section class="benefits column officers">
     <h1>Activities Director - Aubrey Yang</h1>
     <br>
     <div class="row">
@@ -152,12 +235,10 @@
         <img src="./Img/Officer-Aubrey (1 of 1).webp" width="80%" alt="">
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Historian -->
-  <section class="events column officers">
+  <!-- <section class="events column officers">
     <h1>Historian - Paofue Moua</h1>
-    <br>
-    <!-- <table id="sig_table" style="width: 450px; font-family: sans-serif;"> <tbody><tr> <td style="width: 40%;border-right: solid 1px #daac00"> <img alt="uc merced logo" src="./Img/ucm_new-logo.png" width="100%"> </td> <td style="width: 300px;padding-left: 5px;"> <span id="pronouns" class="pronouns" style="font-size: 2vw;">He / Him</span><br><span id="title" class="sig_title" style="display:block;margin-top:10px;margin-bottom:10px;font-size: 2.5vw;color: #092f44;text-transform: uppercase;">Historian</span> <span id="dept" class="sig_dept" style="font-size: 2vw;text-transform: uppercase;">Hmong Student Association</span><span style="display:block;margin-top:10px;font-size: vw;letter-spacing: normal;color: #999;">5200 Lake Road&nbsp;<span style="color: #daac00;">|</span>&nbsp;Merced, California 95343<br></span> <span id="website" class="sig_website" style="font-size: 1.5vw;letter-spacing: normal;color: #999;">Paofuemoua@ucmerced.edu</span>&nbsp;<span id="phone_bar" style="color: #daac00;"></span> <span id="phone" style="font-size: 12px;letter-spacing: normal;color: #999;"></span> </td> </tr></tbody></table> -->
     <br>
     <div class="row">
       <div class="half column">
@@ -168,9 +249,9 @@
         <p>The Historian is responsible for documenting the organization's history including its activities, achievements, and significant events. This includes maintaining records, collecting photos and videos, and creating historical archives. Essential qualities are attention to detail, organizational skills, and a passion for preserving history.</p>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Director of Community Events -->
-  <section class="benefits column officers">
+  <!-- <section class="benefits column officers">
     <h1>Director of Community Events - Kate Saechao</h1>
     <br>
     <div class="row">
@@ -182,9 +263,9 @@
         <img src="./Img/Officer-Kate (1 of 1).webp" width="80%" alt="">
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Director of Community Events -->
-  <section class="join-us column officers">
+  <!-- <section class="join-us column officers">
     <h1>Director of Community Events - Matthew Vang</h1>
     <br>
     <div class="row">
@@ -196,7 +277,7 @@
         <p>The Director of Community Events has 2 people and these people mainly plans and executes events that benefit the community. This includes organizing volunteer opportunities, fundraising events, and other initiatives that support the organization's mission. This includes our major events like Hmong Culture Night and our Educational Conference. Key qualities include organizational skills, community engagement, and the ability to work collaboratively.</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <footer>
     <div class="grid">
